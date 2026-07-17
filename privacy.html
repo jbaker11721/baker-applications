@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Baker Applications</title>
-  <meta name="description" content="Privacy Policy for Baker Applications and the Resamaze iOS app.">
+  <meta name="description" content="Privacy Policy for Baker Applications and its iOS apps, including Resamaze.">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; color: #1A1A2E; background: #FFFFFF; line-height: 1.6; -webkit-font-smoothing: antialiased; }
@@ -38,6 +38,9 @@
     .prose th { text-align: left; padding: 10px 14px; background: #F4F4F6; color: #1B2B4B; font-weight: 600; border: 1px solid #E2E2E8; }
     .prose td { padding: 10px 14px; border: 1px solid #E2E2E8; color: #32323F; vertical-align: top; }
 
+    .info-box { background: #EDEAFB; border: 1px solid #5B4BE820; border-radius: 12px; padding: 18px 22px; margin-bottom: 32px; }
+    .info-box p { font-size: 14px; color: #1B2B4B; margin: 0; line-height: 1.6; }
+
     .contact-box { background: #F4F4F6; border: 1px solid #E2E2E8; border-radius: 14px; padding: 24px 28px; margin-top: 48px; }
     .contact-box h3 { font-size: 16px; font-weight: 700; color: #1B2B4B; margin-bottom: 8px; }
     .contact-box p { font-size: 15px; color: #64748B; margin: 0; }
@@ -52,12 +55,14 @@
     .footer-col h4 { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 12px; }
     .footer-col a { display: block; font-size: 14px; color: rgba(255,255,255,0.7); margin-bottom: 8px; text-decoration: none; }
     .footer-col a:hover { color: white; }
-    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
     .footer-copy { font-size: 13px; color: rgba(255,255,255,0.4); }
+    .footer-no-cookies { font-size: 12px; color: rgba(255,255,255,0.3); }
 
     @media (max-width: 600px) {
       .nav-links { gap: 16px; }
       .footer-top { flex-direction: column; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
       .prose table { font-size: 13px; }
     }
   </style>
@@ -79,52 +84,101 @@
   <div class="inner">
     <div class="eyebrow">Legal</div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: July 17, 2026 &nbsp;·&nbsp; Applies to: Resamaze (iOS)</p>
+    <p class="meta">Effective date: July 17, 2026 &nbsp;·&nbsp; Baker Applications &amp; its iOS applications</p>
   </div>
 </div>
 
 <div class="prose">
 
   <h2>Overview</h2>
-  <p>Baker Applications ("we," "us," or "our") operates the Resamaze iOS application. This Privacy Policy explains what information we collect, how we use it, with whom we share it, and the choices you have regarding your information.</p>
-  <p>By creating an account or using Resamaze, you agree to the collection and use of information as described in this policy. If you do not agree, please do not use our app.</p>
+  <p>Baker Applications ("we," "us," or "our") is an independent iOS app studio based in the United States. This Privacy Policy explains how we collect, use, disclose, and safeguard your information across our iOS applications, currently including <strong>Resamaze</strong>. Future applications published by Baker Applications will also be governed by this policy, with any app-specific disclosures noted where applicable.</p>
+  <p>By creating an account or using any Baker Applications app, you agree to the collection and use of information as described in this policy. If you do not agree, please do not use our apps.</p>
 
   <h2>Information We Collect</h2>
 
   <h3>Information you provide directly</h3>
   <ul>
-    <li><strong>Account information:</strong> Your email address and password when you create an account. We use Supabase to manage authentication.</li>
-    <li><strong>Resume content:</strong> All professional information you enter into the app, including your name, contact details, work experience, education history, skills, projects, and certifications.</li>
+    <li><strong>Account information:</strong> Your email address and password when you create an account. Authentication is managed by Supabase.</li>
+    <li><strong>Resume content:</strong> All professional information you enter, including your name, contact details, work experience, education history, skills, projects, and certifications.</li>
     <li><strong>Application tracking data:</strong> Job applications you log in the app, including company names, roles, and status updates.</li>
   </ul>
 
   <h3>Information collected automatically</h3>
   <ul>
-    <li><strong>Usage data:</strong> Feature usage counts (such as the number of AI-powered resume imports you have performed) stored to manage free and paid tier limits.</li>
+    <li><strong>Usage data:</strong> Feature usage counts (such as the number of AI-powered resume imports performed) stored to manage free and paid tier limits.</li>
     <li><strong>Subscription status:</strong> Whether you have an active Pro subscription, managed through RevenueCat and Apple's App Store.</li>
     <li><strong>Device and system information:</strong> Basic device type and operating system version, collected by Apple and third-party services listed below. We do not independently collect device identifiers.</li>
   </ul>
 
+  <h2>Legal Basis for Processing (GDPR)</h2>
+  <p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, we process your personal data under the following legal bases as required by the General Data Protection Regulation (GDPR) and equivalent legislation:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Data Category</th>
+        <th>Legal Basis</th>
+        <th>Article 6 Basis</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Account information (email, password)</td>
+        <td>Performance of a contract — necessary to create and maintain your account</td>
+        <td>Art. 6(1)(b)</td>
+      </tr>
+      <tr>
+        <td>Resume content and application tracking data</td>
+        <td>Performance of a contract — necessary to provide the core features of the app</td>
+        <td>Art. 6(1)(b)</td>
+      </tr>
+      <tr>
+        <td>Usage data and subscription status</td>
+        <td>Performance of a contract — necessary to enforce tier limits and manage your subscription</td>
+        <td>Art. 6(1)(b)</td>
+      </tr>
+      <tr>
+        <td>AI feature processing (resume import, job scan)</td>
+        <td>Legitimate interest — to provide optional AI-powered features you have actively chosen to use; processing is limited to what is necessary to return results to you</td>
+        <td>Art. 6(1)(f)</td>
+      </tr>
+      <tr>
+        <td>Transactional emails</td>
+        <td>Performance of a contract — necessary to verify your account and enable password recovery</td>
+        <td>Art. 6(1)(b)</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Where we rely on legitimate interest as a legal basis, you have the right to object to that processing. See "Your Rights and Choices" below.</p>
+
   <h2>How We Use Your Information</h2>
   <ul>
     <li>To create and manage your account</li>
-    <li>To provide the core features of Resamaze (resume building, previewing, exporting)</li>
+    <li>To provide the core features of our apps (resume building, previewing, exporting)</li>
     <li>To process AI-powered features (resume import, job description scanning) through secure server-side processing</li>
     <li>To enforce free tier limits and manage your Pro subscription</li>
     <li>To send transactional emails (account verification, password reset) via Resend</li>
     <li>To respond to support requests and inquiries</li>
-    <li>To improve the app based on general usage patterns</li>
+    <li>To improve our apps based on general usage patterns</li>
   </ul>
   <p>We do not use your resume content or personal information for advertising purposes, and we do not sell your data to third parties.</p>
 
-  <h2>AI-Powered Features</h2>
-  <p>Resamaze includes optional AI-powered features (resume import and job description scanning). When you use these features, portions of your resume content or job description text are transmitted to our secure server-side infrastructure for processing. This processing is handled through Anthropic's Claude API.</p>
-  <p>Data sent for AI processing is used only to generate results for you in the moment. It is not stored by us beyond the processing request and is subject to Anthropic's data usage policies. You can review Anthropic's privacy practices at <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a>.</p>
-  <p>AI features are optional. The core resume-building functionality does not require transmitting your data off-device.</p>
+  <h2>AI-Powered Features and Transparency</h2>
+  <p>Our apps include optional AI-powered features (currently: resume import and job description scanning in Resamaze). In compliance with applicable transparency requirements, including the EU AI Act, we disclose the following:</p>
+  <ul>
+    <li><strong>What AI does:</strong> When you use an AI feature, your content (resume text or job description) is processed by an AI language model to generate structured output or analysis. The AI does not make autonomous decisions with legal or similarly significant effects — all output is presented to you for review before use.</li>
+    <li><strong>How it works:</strong> Content you submit for AI processing is transmitted to our secure server-side infrastructure, which calls Anthropic's Claude API to perform the analysis. Results are returned to you within the app.</li>
+    <li><strong>Data use:</strong> Content sent for AI processing is used only to generate your results. It is not stored by us beyond the processing request and is subject to Anthropic's data usage policies.</li>
+    <li><strong>Accuracy:</strong> AI-generated output may be incomplete or imprecise. You are solely responsible for reviewing any AI-generated content before submitting it to employers or third parties.</li>
+    <li><strong>Optional:</strong> All AI features are optional. Core functionality does not require transmitting your data off-device.</li>
+  </ul>
+  <p>You can review Anthropic's privacy practices at <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a>.</p>
+
+  <h2>Do Not Track</h2>
+  <p>We do not track users across third-party websites or services, and our apps do not engage in cross-context behavioral advertising. Accordingly, there is no cross-site tracking to disable, and Do Not Track (DNT) browser signals have no additional effect on our data practices beyond what is already described in this policy.</p>
+  <p>This website uses no cookies, pixels, or tracking technologies of any kind.</p>
 
   <h2>Third-Party Services</h2>
-  <p>We use the following third-party services to operate Resamaze. Each has its own privacy policy governing their use of data.</p>
-
+  <p>We use the following third-party services to operate our apps. Each has its own privacy policy governing their use of data.</p>
   <table>
     <thead>
       <tr>
@@ -162,6 +216,10 @@
     </tbody>
   </table>
 
+  <h2>International Data Transfers</h2>
+  <p>Baker Applications is based in the United States. If you access our apps from outside the United States, your information may be transferred to, stored, and processed in the United States or other countries where our third-party service providers operate.</p>
+  <p>If you are located in the EEA, UK, or Switzerland, please be aware that the United States and other countries may not provide the same level of data protection as your home country. Where required by applicable law, we rely on appropriate transfer mechanisms (such as Standard Contractual Clauses) implemented by our third-party processors, including Supabase and Anthropic, for such transfers.</p>
+
   <h2>Data Storage and Security</h2>
   <p>Your account data is stored securely by Supabase in accordance with industry-standard security practices. Subscription data is stored by RevenueCat. Resume content you enter in the app is held in app memory during your session.</p>
   <p>We implement reasonable technical and organizational measures to protect your information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or method of electronic storage is 100% secure.</p>
@@ -171,28 +229,41 @@
   <p>To request account deletion, contact us at <a href="mailto:resamazereset@gmail.com">resamazereset@gmail.com</a>.</p>
 
   <h2>Children's Privacy</h2>
-  <p>Resamaze is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us and we will promptly delete it.</p>
+  <p>Our apps are not directed at children under the age of 13 (or 16 in certain EEA member states). We do not knowingly collect personal information from children under these ages. If you believe we have inadvertently collected such information, please contact us and we will promptly delete it.</p>
 
   <h2>Your Rights and Choices</h2>
-  <p>Depending on your location, you may have rights regarding your personal information, including:</p>
+  <p>Depending on your location, you may have the following rights regarding your personal information:</p>
   <ul>
     <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
-    <li><strong>Correction:</strong> Update or correct inaccurate information (you can update most information directly in the app).</li>
+    <li><strong>Correction:</strong> Update or correct inaccurate information (most information can be updated directly in the app).</li>
     <li><strong>Deletion:</strong> Request deletion of your account and personal data.</li>
     <li><strong>Portability:</strong> Request your data in a portable format.</li>
-    <li><strong>Objection:</strong> Object to certain types of processing.</li>
+    <li><strong>Restriction:</strong> Request that we restrict processing of your data in certain circumstances.</li>
+    <li><strong>Objection:</strong> Object to processing based on legitimate interest (see Legal Basis section).</li>
+    <li><strong>Withdrawal of consent:</strong> Where processing is based on consent, withdraw it at any time without affecting the lawfulness of prior processing.</li>
   </ul>
-  <p>To exercise any of these rights, contact us at <a href="mailto:resamazereset@gmail.com">resamazereset@gmail.com</a>. We will respond within 30 days.</p>
+  <p>To exercise any of these rights, contact us at <a href="mailto:resamazereset@gmail.com">resamazereset@gmail.com</a>. We will respond within 30 days (or within the timeframe required by applicable law).</p>
 
-  <h2>California Privacy Rights (CCPA)</h2>
-  <p>If you are a California resident, you have the right to know what personal information we collect, the right to delete your personal information, and the right to opt out of the sale of your personal information. We do not sell personal information. To exercise your rights, contact us using the information below.</p>
+  <h3>Right to Lodge a Complaint (EEA / UK)</h3>
+  <p>If you are located in the European Economic Area or United Kingdom and believe we have not handled your personal data in accordance with applicable law, you have the right to lodge a complaint with your local data protection supervisory authority. A directory of EEA supervisory authorities is available at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener">edpb.europa.eu</a>. UK residents may contact the Information Commissioner's Office at <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a>.</p>
+
+  <h2>California Privacy Rights (CCPA / CPRA)</h2>
+  <p>If you are a California resident, you have the following rights under the California Consumer Privacy Act and California Privacy Rights Act:</p>
+  <ul>
+    <li><strong>Right to Know:</strong> Request disclosure of the categories and specific pieces of personal information we have collected about you.</li>
+    <li><strong>Right to Delete:</strong> Request deletion of your personal information, subject to certain exceptions.</li>
+    <li><strong>Right to Correct:</strong> Request correction of inaccurate personal information.</li>
+    <li><strong>Right to Opt Out of Sale or Sharing:</strong> We do not sell or share personal information for cross-context behavioral advertising.</li>
+    <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights.</li>
+  </ul>
+  <p>To exercise your California rights, contact us at <a href="mailto:resamazereset@gmail.com">resamazereset@gmail.com</a>.</p>
 
   <h2>Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the effective date at the top of this page. We encourage you to review this policy periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+  <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the effective date at the top of this page and, where required by law, by providing additional notice (such as an in-app notification). Your continued use of our apps after changes are posted constitutes acceptance of the updated policy.</p>
 
   <div class="contact-box">
     <h3>Contact Us</h3>
-    <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us at: <a href="mailto:resamazereset@gmail.com">resamazereset@gmail.com</a><br>Baker Applications, United States</p>
+    <p>For questions, requests, or concerns regarding this Privacy Policy or your personal data, contact us at:<br><a href="mailto:resamazereset@gmail.com">resamazereset@gmail.com</a><br>Baker Applications, United States</p>
   </div>
 
 </div>
@@ -219,6 +290,7 @@
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">© 2026 Baker Applications. All rights reserved.</p>
+      <p class="footer-no-cookies">This site uses no cookies or tracking technologies.</p>
     </div>
   </div>
 </footer>
